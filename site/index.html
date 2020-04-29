@@ -2,31 +2,88 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Coursera HTML/CSS/Javascript Notes</title>
+	<title>Coursera HTML/CSS/Javascript Course</title>
+	<!--Placing CSS directly in document for practice. Move to external stylesheet when I learn how to do that.-->
+	<style>
+		.blue {
+			color: #B3E5FC;
+		}
+
+		p {
+			color: #BA4A00;
+			font-size: 20px;
+			width: 200px;
+		}
+
+		h1 {
+			color: #196f3d;
+			font-size: 36px;
+			text-align: center;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: #B3E5FC;
+			border: 1px solid #795548;
+			color: #000000;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+		a:hover, a:active {
+			background-color: #F9FBE7;
+			color: #0D47A1;
+		}
+
+		header li:nth-child(odd) {
+			font-size: 24px;
+		}
+
+		header li:nth-child(even):hover {
+			background-color: #F9FBE7;
+			cursor: pointer;
+			width: 200px;
+		}
+
+		#uniqueli {
+			color: #795548;
+		}
+	</style>
 </head>
 <body>
-	<header>Looks like header &lt;header&gt; can come before or after &lt;h1&gt;?
-	<nav>Nav link placeholder </nav>
-	</header>
-<h1>Coding Some Notes in HTML</h1>
-<p>
-	<img src="gen-thomas-gage.jpg" width="122" height="122" alt="Picture with a quote">Image inline with text.</p>
-<p>Links</p>
+<header>
+	<h1>Coursera Notes and Practice</h1>
+	<ul>
+		<li>Child 1</li>
+		<li>Child 2</li>
+		<li>Child 3</li>
+		<li>Child 4</li>
+	</ul>
+</header>
+<p>Some paragraph text before Section 1 to practice CSS width, color and other properties and values. Paragraph should wrap after width defined in stylesheet for paragraph.  Also practicing grouping and combining selectors.
+</p>
+<p><a href="#extpicture">Scroll to external picture</a></p>
+<p class="blue">
+	This is an<img src="gen-thomas-gage.jpg" width="122" height="122" alt="Picture with a quote">image inline with text.
+</p>
+<h2>Links</h2>
     <a href="div-and-span.html" title="same dir link div span">Linking to a file in the same directory</a>
-
     <a href="doc-structure-before.html" title="same dir link doc structure before">
-      <div> DIV Linking to a file in the same directory</div>
+    	<div> DIV Linking to a file in the same directory</div>
     </a>
-    <p>External Link</p>
-    	<a href="https://admin.timesheetmobile.com/exeter" target="blank" title="external link tsm/exeter">TSM external link</a>
+    <a href="https://admin.timesheetmobile.com/demo" target="blank" title="external link tsm/demo">TSM external link
+    </a>
 <h2>Heading 2</h2>
-	<section>
+<p>This is a paragraph that is a direct child of an &lt;h2&gt; section.  Practicing child selector and descendant selectors.</p>
+<section>
     <h2>Section 1</h2>
-    <article><h3>Article 1</h3></article>
-    <article><h3>Article 2</h3></article>
-    <article><h3>Article 3</h3></article>
-  </section>
-  <p>Ordered List of Notes</p>
+    	<p>Paragraph text direct child of &lt;h2&gt; and preceding articles</p>
+    	<article><h3>Article 1</h3></article>
+    	<article><h3>Article 2</h3></article>
+    	<article><h3>Article 3</h3></article>
+</section>
+<p>Ordered List of Notes</p>
   	<ol>
   		<li>GitHub account and git installation</li>
   		<li>Sublime Text 3 code editor</li>
@@ -35,7 +92,7 @@
   	</ol>
   	<p>Nesting Lists</p>
   	<ol>
-  		<li>Item 1</li>
+  		<li id="uniqueli">Item 1</li>
   		<li>Item 2</li>
   		<li>Unordered list nested
   			<ul>
@@ -45,12 +102,12 @@
   		</li>
   		<li>Item 3</li>
   	</ol>
-  <aside>
-    ASIDE - Some information that relates to the main topic, i.e., related posts.
-  </aside>
-<p>
-<img src="http://lorempixel.com/output/nature-q-c-640-480-1.jpg" width="640" height="480" alt="External Pic Link">
-</p>
-<footer>ELR Coursera Notes &copy; 2020</footer>
+<section id="extpicture">
+  	<h4>External picture link</h4>
+		<p>
+			<img src="https://www.timesheetmobile.com/wp-content/uploads/2017/10/timesheet-app-576x1024.png" width="576" height="1024" alt="External Pic Link">
+		</p>
+</section>
+<footer>ELR Coursera Notes &copy; April 2020</footer>
 </body>
 </html>
