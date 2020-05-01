@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;   /*Used to include padding and margin in box width and height*/
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #F8F9F9;
+}
+
+p {
+	margin: 0; /*Added because <p> is not inheriting property in Chrome browser from <body> declaration above*/
+}
+
+.title-text {
+	color: #3498DB;
+	text-align: center;
+}
+
+.outermenubox {
+	background-color: #F8F9F9;
+}
+
+.menubox {
+	border: 1px solid #000000;
+	background-color: #FAE5D3;
+}
+
+.menutitle {
+	margin: 0px;
+	text-align: center;
+	border: 1px solid #000000;
+	width: 33.33%;
+	float: right;
+}
+
+.menutext {
+	background-color: #FAE5D3;
+	padding: 10px 10px 10px 10px;
+	clear: right;
+}
+
+.chicken {
+	color: #FAE5D3;
+	background-color: #EB984E; 
+}
+
+.beef {
+	color: #FAE5D3;
+	background-color: #C0392B;
+}
+
+.sushi {
+	color: #FAE5D3;
+	background-color: #3498DB;
+}
+
+
+.row {
+  width: 100%;
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+	.col-desktop-4 {
+		float: left;
+		width: 33.33%;
+	}
+
+	.mar-desktop-4-col1 {
+		margin: 3.33%;
+	}
+
+	.mar-desktop-4-col2 {
+			margin: 3.33%;
+		}
+
+	.mar-desktop-4-col3 {
+			margin: 3.33%;
+		}
+
+}
+
+/*Tablet view*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tablet-6 {
+		float: left;
+		width: 50%;
+	}
+	.col-tablet-12 {
+		float: left;
+		width: 100%;
+	}
+
+	.mar-tablet-col1 {
+		margin: 3.33%;
+	}
+
+	.mar-tablet-col2 {
+			margin: 3.33%;
+		}
+
+	.mar-tablet-col3 {
+			margin: 1.5%;
+		}	
+
+}
+
+/*Mobile view*/
+@media (max-width: 767px) {
+	.col-mobile-12 {
+		float: left;
+		width: 100%;
+	}
+
+	.mar-mobile-col1 {
+		margin: 3.33%;
+	}
+
+}
