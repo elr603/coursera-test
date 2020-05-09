@@ -37,7 +37,7 @@ body {
 /*Main Page*/
 #page-title {
 	color: #3A449E;
-	text-align: center;
+/*	text-align: center;*/
 	font-size: 1.85em;
 }
 #chicken, #beef, #sushi {
