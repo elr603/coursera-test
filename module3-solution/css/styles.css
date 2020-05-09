@@ -1,0 +1,62 @@
+body {
+	background-color: #F2E7E6;
+}
+/*Header*/
+#header-bar {
+	background-color: #3A449E;
+	border-radius: 0;
+  	border: 0;
+}
+.navbar.fill {
+	padding: 0; /*Overridding navbar padding for navbar to fill screen*/
+}
+#menu-right {
+	border-color: #FFEEB3;
+	margin: 0.5rem 1rem;
+}
+.navbar-brand.header-text {
+	font-size: 2.25em;
+	font-weight: 600;
+	color: #FFEEB3;
+/*	padding: 0.5rem 1rem;*/ /*Need this only for xs*/
+}
+@media (max-width: 575px) {
+	.navbar-brand.header-text {
+		padding: 0.25rem 1rem; /*Adding padding needed for xs screen */
+	}
+}
+/*Header End*/
+/*Nav Link Text*/
+#nav-list a {
+  color: #FFEEB3;
+  width: 100%;
+  background-color: #4F5DD6;
+  text-align: center;
+}
+/*Nav Link Text End*/
+/*Main Page*/
+#page-title {
+	color: #3A449E;
+	text-align: center;
+	font-size: 1.85em;
+}
+#chicken, #beef, #sushi {
+	color: #3A449E;
+	background-color: #D4BF72;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.25rem;
+	margin-bottom: 0;
+}
+.item-description {
+	color: #3A449E;
+	height: 360px;
+	overflow: auto;
+	background-color: #FCF5DC;
+	font-size: 1em;
+	padding: 1rem;
+}
+.menu-box {
+	padding: 0;
+}
+/*Main Page End*/
